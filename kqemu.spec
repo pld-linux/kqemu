@@ -1,5 +1,5 @@
 %define		_rc		Alpha
-%define		_rel	0.2
+%define		_rel	0.3
 Summary:	KQEMU - KDE GUI for QEMU
 Name:		kqemu
 Version:	0.3
@@ -9,7 +9,7 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/kqemu/%{name}-%{version}%{_rc}.tgz
 # Source0-md5:	2df7544e071c34e92989b281b3145331
 URL:		http://kqemu.sourceforge.net/
-Requires:	kdewebdev-kommander
+Requires:	kdewebdev-kommander-executor
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
