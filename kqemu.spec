@@ -1,6 +1,7 @@
 %define		_rc		Alpha
 %define		_rel	0.3
 Summary:	KQEMU - KDE GUI for QEMU
+Summary(pl.UTF-8):	KQEMU - Graficzny interfejs KDE do QEMU
 Name:		kqemu
 Version:	0.3
 Release:	0.%{_rc}.%{_rel}
@@ -19,8 +20,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A KDE front-end for QEMU CPU emulator. QEMU is a FAST! processor
 emulator using dynamic translation to achieve good emulation speed.
 
-KQEMU makes it easier to launch QEmu directly or create scripts for
+KQEMU makes it easier to launch QEMU directly or create scripts for
 easy launching of QEMU environments.
+
+%description -l pl.UTF-8
+Graficzny interfejs KDE do emulatora CPU QEMU. QEMU to szybki emulator
+procesora wykorzystujący dynamiczne tłumaczenie w celu osiągnięcia
+dobrej prędkości emulacji.
+
+KQEMU ułatwia uruchamianie QEMU bezpośrednio oraz tworzenie skryptów
+do łatwego uruchamiania środowisk QEMU.
 
 %prep
 %setup -qc
